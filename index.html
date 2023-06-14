@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" defer ></script>
+  </head>
+  <body
+    class="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-16"
+  >
+    <div class="px-4 py-2">
+        <h1 class="text-gray-800 font-bold text-2xl uppercase">To-Do List</h1>
+    </div>
+    <form class="w-full max-w-sm mx-auto px-4 py-2">
+        <div class="flex items-center border-b-2 border-teal-500 py-2">
+            <input
+                id="input"
+                class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text" placeholder="Add a task">
+        </div>
+    </form>
+    <ul id="list" class="divide-y divide-gray-200 px-4">
+    </ul>
+    <div class="bg-white w-full px-[20px] py-4 grid grid-cols-[1fr_2fr] shadow-xl border-t-2 border-gray-200">
+    <span id="count"></span>
+    <ul data-todo="filters" class="flex justify-center">
+      <li class="px-[20px]">
+        <a class="checked p-2" href="#/">All</a>
+      </li>
+      <li class="px-[20px]">
+        <a href="#/active" class="p-2">Active</a>
+      </li>
+      <li  class="px-[20px]">
+        <a href="#/completed" class="p-2">Completed</a>
+      </li>
+    </ul>
+  </div>
+</div>
+  </body>
+</html>
